@@ -1,0 +1,776 @@
+{
+
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+  
+  body {
+  
+  background-color: #080808 ;
+  color: #fff;
+  }
+  
+  #header {
+  
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/002/241/545/original/abstract-dark-blue-gradient-diagonal-background-free-vector.jpg); */
+  background-size: cover;
+  background-position: center;
+  
+  }
+  
+  .container {
+  
+  padding: 10px 10% ;
+  
+  }
+  
+  
+  nav {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  
+  .logo {
+  color: #cc8899;
+  width:140px
+  
+
+  }
+  
+  
+  nav ul li {
+  
+  display: inline-block;
+  margin:10px 20px ;
+  list-style: none;
+  
+  
+  }
+  
+  nav ul li a{
+  
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  
+  
+  }
+  
+  
+  nav ul li a::after {
+  
+  content:'' ;
+  width:0;
+  height: 3px ;
+  background: #cc8899;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  
+  }
+  
+  nav ul li a:hover::after {
+  
+  width: 100%;
+  
+  }
+  
+  .header-text {
+  margin-top: 20%;
+  font-style: 30px;
+  
+  
+  }
+  
+  .header-text h1 {
+  
+  font-size: 60px ;
+  margin-top: 20px;
+  
+  }
+  
+  .header-text h1 span {
+  
+  color:#cc8899;
+  
+  
+  }
+  
+  /* __________about------------- */
+  
+  
+  #about {
+  
+  padding: 80px 0;
+  color:#ababab ;
+  
+  
+  }
+  
+  .row {
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  
+  }
+  
+  .about-col-1 {
+  
+  flex-basis: 35%;
+  
+  }
+  
+  .about-col-1 img {
+  
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+
+
+
+  /* width: 100%;
+  border-radius: 15px; */
+  
+  }
+  
+  .about-col-2 {
+  
+  flex-basis: 60%;
+  
+  
+  }
+  .sub-title {
+  
+  font-size:60px ;
+  font-weight: 600;
+  color:#cc8899;
+  }
+  
+  
+  .tab-title {
+  
+  display: flex;
+  margin: 20px 0 40px ;
+  
+  }
+  
+  
+  .tab-links {
+  
+  margin-right: 50px ;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position:relative ;
+  
+  }
+  
+  
+  .tab-links::after{
+  
+  width: 0;
+  content: '';
+  height: 3px;
+  background:#cc8899 ;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  
+  }
+  
+  
+  .tab-links.active-link::after{
+  
+  width: 50%;
+  
+  }
+  
+  .tab-contents ul li{
+  list-style:none ;
+  margin: 10px 0;
+  
+  
+  }
+  
+  .tab-contents ul li span{
+  
+  color:#cc8899;
+  font-size: 15px;
+  
+  }
+  
+  .tab-contents{
+  
+  display: none;
+  
+  }
+  
+  .tab-contents.active-tab{
+  
+  display: block;
+  }
+  
+  
+  
+  
+  
+  /* _---------services------ */
+  
+  
+  
+  #services h1{
+  
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-left:380px;
+  
+  
+  }
+  
+  /* Skills Container */
+  
+  
+  
+  
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Skill Cards */
+  .skills-card {
+    background-color: #262626;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease ;
+    cursor: pointer;
+    
+  }
+  
+  .skills-card:hover {
+    transform: translateY(-10px);
+    background-color: #cc8899;
+  }
+  
+  /* Skill Card Icons */
+  .skills-card i {
+    font-size: 3rem;
+    color:white;
+    margin-bottom: 15px;
+  }
+  
+  /* Skill Card Text */
+  .skills-card h3 {
+    font-size: 1.4rem;
+    color:#cc8899;
+    margin-bottom: 10px;
+    transition: background 0.5s , transform 0.5s;
+    
+  }
+  
+  .skills-card:hover h3 {
+  
+  
+  transform: translateY(-10px);
+  color:#000;
+  }
+  
+  
+  
+  .skills-card p {
+    font-size: 0.95rem;
+    color: #bec9d2;
+    line-height: 1.5;
+    transition: background 0.5s , transform 0.5s;
+  
+  }
+  
+  
+  .skills-card:hover p {
+  
+  transform: translateY(-10px);
+  color: #000;
+  
+  }
+  
+   */
+  
+  /* --------portfolio----- */
+  
+  #porfolio{
+  
+  padding: 50px 0;
+  
+  }
+  
+  /* Pura background ka color aur font */
+  
+    
+    /* Portfolio section */
+    #Portfolio {
+      padding: 50px 20px;
+    }
+    
+   
+    /* Title style */
+  
+    
+    /* Project cards ka container */
+    .work-list {
+      display: flex;
+      justify-content: center;
+  padding-top: 40px;
+  column-gap: 30px;
+  
+    }
+  
+  
+    /* Ek project card */
+    .content {
+      background-color:#262626; /* dark gray card */
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 300px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      /* transition: 0.3s; */
+      transition: background 0.5s , transform 0.5s;
+      
+    }
+    
+    /* Hover effect for card */
+    .content:hover {
+      transform: translateY(-10px);
+      background-color: #cc8899;
+      
+    }
+    
+    /* Card title */
+    .content h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    
+    /* Description paragraph */
+    .content p {
+      font-size: 14px;
+      color: #c4cbd3; /* light gray text */
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    /* Tags wali line */
+    .cont {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    /* Har ek tag ka style */
+    .cont span {
+      background-color: #262626; /* dark bluish tag */
+      color: #cc8899; /* text blue */
+      padding: 4px 12px;
+      border-radius: 999px; /* gol gol */
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+      border: 2px solid black;
+      white-space: nowrap;
+     line-height: 1.2;
+  
+  
+    }
+    
+  .cont span:hover{
+  background-color: black;
+  color: white;
+  
+  }
+  
+  
+  
+  
+    /* Read more button */
+    .read-more {
+      display: inline-block;
+      color: #f0f7fa;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      border: 2px solid #141515;
+      background-color: #cc8899;
+      padding: 6px 16px;
+      border-radius: 25px;
+      transition: 0.3s;
+      margin-top: 50px;
+    }
+    
+    /* Hover effect on Read More */
+    .read-more:hover {
+      background-color:black;
+      color:white;
+    }
+    
+  
+  
+  
+  /* ========== */
+  
+  
+  /* GitHub Icon Styling */
+   .social-icon {
+    display: inline-block;
+    font-size: 2rem;              /* आइकन का साइज */
+    color: #333;                  /* आइकन का बेस कलर */
+    text-decoration: none;        /* अंडरलाइन हटाओ */
+    margin: 0 0.5rem;             /* बगल में स्पेस */
+    transition: background 0.5s , transform 0.5s;
+    
+  }
+  
+  .social-icon:hover {
+    background-color:#cc8899;                  /* होवर पर डार्क कलर */
+  transform:translateY(-10px) ;
+  /* हल्का zoom effect */
+  }
+  
+  
+  /* --------soft skills ------- */
+  
+  /* ====================
+     Soft Skills Section
+  ==================== */
+  .soft-skills-section {
+    padding: 60px 20px;
+    background-color:#000;
+    text-align: center;
+  }
+  
+  .skills-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #cc8899;
+    font-weight: bold;
+  }
+  
+  /* Cards Container */
+  .soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Individual Skill Card */
+  .skill-card {
+    background-color:#262626;
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: background 0.5s , transform 0.5s;
+    
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    background-color:#cc8899;
+   
+  }
+  
+  /* Icon Styles */
+  .skill-icon {
+    font-size: 2.8rem;
+    color: #f3f4f5;
+    margin-bottom: 15px;
+  }
+  
+  /* Text Styles */
+  .skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color:#cc8899;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  
+  
+  }
+  
+  .skill-card:hover h3,
+  .skill-card:focus-within h3 {
+    color: #000;                  /* Blue color on hover */
+    transform: translateY(-10px);     /* Slight upward movement for emphasis */
+   /* Blue shadow to make it pop */
+  }
+  
+  
+  
+  .skill-card p {
+    font-size: 0.95rem;
+    color: #a8b9c8;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+  
+  }
+  
+  
+  .skill-card:hover p
+  {
+  
+  transform: translateY(-10px);
+  color: #000;
+  
+  }
+  
+  
+  /* ________certificate-------------- */
+  
+  /* ====================
+     Certificates Section
+  ==================== */
+  .certificates-section {
+    padding: 60px 20px;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .certificates-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color:#cc8899;
+    font-weight: bold;
+  }
+  
+  /* Certificates Container */
+  .certificates-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  /* Certificate Card */
+  .certificate-card {
+    background-color:#262626;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(223, 50, 50, 0.08);
+    transition: transform 0.3s  ease;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-10px);
+    background-color: #cc8899;
+  }
+  
+  /* Certificate Image */
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Text Styling */
+  .certificate-card h3 {
+    font-size: 1.4rem;
+    color:#cc8899;
+    margin-bottom: 10px;
+    transition: transform 0.3s  ease;
+    
+  }
+  
+  .certificate-card:hover h3{
+  
+    transform: translateY(-10px);
+    color: black
+  
+  }
+  
+  
+  .certificate-card p {
+    font-size: 0.95rem;
+    color: #a8b2bb;
+    line-height: 1.5;
+    transition: transform 0.3s  ease;
+  
+  }
+  
+  .certificate-card:hover p {
+  
+    transform: translateY(-10px);
+    color: black
+  
+  
+  
+  }
+  
+  
+  
+  /* __________contact_____________ */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  /* Contact Form Card Styling */
+  .skills-card {
+    background-color: #262626;
+    width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .skills-card:hover {
+    transform: translateY(-10px);
+    background-color: #cc8899;
+  }
+  
+  /* Icon Styling */
+  .skills-card i {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .skills-card:hover i {
+    color: #000;
+  }
+  
+  /* Heading */
+  .skills-card h3 {
+    font-size: 1.4rem;
+    color: #cc8899;
+    margin-bottom: 10px;
+    transition: color 0.5s, transform 0.5s;
+  }
+  
+  .skills-card:hover h3 {
+    transform: translateY(-10px);
+    color: #000;
+  }
+  
+  /* Contact Details Outside the Card */
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .detail-item i {
+    font-size: 1.2rem;
+    color: #cc8899;
+  }
+  
+  .detail-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .detail-item a:hover {
+    color: #cc8899;
+  }
+  
+  /* Form Styling */
+  .skills-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+  }
+  
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: #cc8899;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Submit Button Styling */
+  .skills-card button {
+    padding: 10px;
+    background-color: #cc8899;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills-card button:hover {
+    background-color: #a77c88;
+  }
+  
+  /* Placeholder Text Styling */
+  input::placeholder, textarea::placeholder {
+    color: #464040;
+  }
+  
+
+/* ------------------------------- */
+/* =---------------------------------- */
+
+  
